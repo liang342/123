@@ -9,5 +9,52 @@
   sandbox="allow-scripts allow-same-origin">
 </iframe>
 <div>
+  <!DOCTYPE html>
+<!-- include "Safe.asp" -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇游戏</title>
+    <link rel="stylesheet" href="snake.css">
+</head>
+
+<body>
+    <div id="game-container">
+        <div>
+            <div id="score">得分: 0</div>
+            <canvas id="game-board" width="400" height="400"></canvas>
+        </div>
+        <div id="button-container">
+            <div id="speed-options">
+                <input type="radio" id="speed-fast" name="speed" value="100">
+                <label for="speed-fast">快</label>
+                <input type="radio" id="speed-medium" name="speed" value="200" checked>
+                <label for="speed-medium">中</label>
+                <input type="radio" id="speed-slow" name="speed" value="300">
+                <label for="speed-slow">慢</label>
+            </div>
+            <div id="control-buttons">
+                <button id="up-button">w</button>
+                <div>
+                    <button id="left-button">a</button>
+                    <button id="down-button">s</button>
+                    <button id="right-button">d</button>
+                </div>
+            </div>
+            <button id="start-button">开始</button>
+            <button id="pause-button" disabled>暂停</button>
+            <button id="end-button" disabled>结束</button>
+        </div>
+    </div>
+    <div id="game-over-panel" class="hidden">
+        <h2>游戏结束！</h2>
+        <p>你的得分: <span id="final-score"></span></p>
+        <button id="play-again-button">再来一局</button>
+        <button id="return-button">返回</button>
+    </div>
+    <div id="countdown" class="hidden">3</div>
+    <script src="snake.js"></script>
+</body>
 </body>
 </html>
