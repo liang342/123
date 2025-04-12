@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-	<div id="hyvor-talk-view"></div>  
-<script async src="https://talk.hyvor.com/web-api/embed.js"></script>  
-<script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
-<hyvor-talk-comments
-	website-id="13045"
-	page-id=""
-></hyvor-talk-comments>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>留言板</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="page-wrapper">
+        <!-- Header -->
+        <div id="header-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <header id="header">
+                            <h1><a href="index.html" id="logo">昆虫社</a></h1>
+                            <nav id="nav">
+                                <a href="index.html">Home</a>
+                                <a href="twocolumn1.html">新手指南</a>
+                                <a href="twocolumn2.html" class="current-page-item">留言</a>
+                                <a href="onecolumn.html">资源</a>
+                                <a href="threecolumn.html">网站推荐</a>
+                            </nav>
+                        </header>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main -->
+        <div id="main">
+            <div class="container">
+                <div class="row main-row">
+                    <div class="col-12">
+                        <section>
+                            <h2>留言板</h2>
+                            <div id="hyvor-talk-view"></div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script async src="https://talk.hyvor.com/web-api/embed.js"></script>
+    <script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
+    <hyvor-talk-comments
+        website-id="13045"
+        page-id="twocolumn2"
+    ></hyvor-talk-comments>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/browser.min.js"></script>
+    <script src="js/breakpoints.min.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
 </body>
- 
 </html>
